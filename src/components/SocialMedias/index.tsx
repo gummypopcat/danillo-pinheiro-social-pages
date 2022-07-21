@@ -1,23 +1,30 @@
 import Link from "./Link";
 import styles from './SocialMedias.module.scss';
+import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 export default function SocialMedias() {
       return (
          <>
-            <ul className={styles.socialMedias}>
-               <Link href="https://www.youtube.com/">
-                  <li className={styles.socialMediasItem}>
-                     <img className={styles.socialMediasItemIcon} src="/twitter.svg" />
+            <div className={styles.socialMedias}>
+               <Link href="https://twitter.com/gummypopcat">
+                  <div className={styles.item}>
+                     <BsTwitter className={styles.itemIcon} />
                      <p>Twitter</p>
-                  </li>
+                  </div>
                </Link>
-               <Link href="https://www.youtube.com/">
-                  <li className={styles.socialMediasItem}>
-                     <img className={styles.socialMediasItemIcon} src="/github.svg" />
+               <Link href="https://github.com/gummypopcat">
+                  <div className={styles.item}>
+                     <BsGithub className={styles.itemIcon} />
                      <p>Github</p>
-                  </li>
+                  </div>
                </Link>
-            </ul>
+               <Link href="https://www.linkedin.com/in/danillo-pinheiro-54639623a/">
+                  <div className={styles.item}>
+                     <BsLinkedin className={styles.itemIcon} />
+                     <p>Linkedin</p>
+                  </div>
+               </Link>
+            </div>
          </>
       )
    }
