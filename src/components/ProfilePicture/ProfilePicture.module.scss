@@ -1,0 +1,19 @@
+.profile {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   align-items: center;
+
+   &Image {
+      width: 96px;
+      border-radius: 100%;
+      border: 3px solid rgba(255, 210, 210, 0.6);
+   }
+
+   &Name {
+      color: rgb(255, 210, 210);
+      font-size: 1.3rem;
+      font-weight: 700;
+   }
+}
+
