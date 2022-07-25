@@ -7,12 +7,6 @@ const SocialMedias: NextPage = () => {
       return (
          <>
             <div className={styles.socialMedias}>
-               <Link href="https://twitter.com/gummypopcat">
-                  <div className={styles.item}>
-                     <BsTwitter className={styles.itemIcon} />
-                     <p>Twitter</p>
-                  </div>
-               </Link>
                <Link href="https://github.com/gummypopcat">
                   <div className={styles.item}>
                      <BsGithub className={styles.itemIcon} />
