@@ -1,8 +1,9 @@
 import Link from "./Link";
 import styles from './SocialMedias.module.scss';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
+import {NextPage} from 'next'; 
 
-export default function SocialMedias() {
+const SocialMedias: NextPage = () => {
       return (
          <>
             <div className={styles.socialMedias}>
@@ -26,5 +27,7 @@ export default function SocialMedias() {
                </Link>
             </div>
          </>
-      )
-   }
+      );
+   };
+
+   export default SocialMedias;

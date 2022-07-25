@@ -1,7 +1,9 @@
 import '../style/reset.scss';
+import type { AppProps } from 'next/app';
+import {NextPage} from 'next'; 
 
-function MyApp({ Component, pageProps }) {
+const MyApp: NextPage<AppProps> = ({ Component, pageProps }: AppProps) => {
    return <Component {...pageProps} />
-}
+};
 
-export default MyApp
+export default MyApp;
